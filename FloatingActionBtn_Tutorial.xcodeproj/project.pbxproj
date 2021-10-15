@@ -13,6 +13,7 @@
 		3E6768CF2719B3750001F0C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E6768CD2719B3750001F0C0 /* Main.storyboard */; };
 		3E6768D12719B3760001F0C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E6768D02719B3760001F0C0 /* Assets.xcassets */; };
 		3E6768D42719B3760001F0C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E6768D22719B3760001F0C0 /* LaunchScreen.storyboard */; };
+		BB62CB1D948778874BE3581D /* Pods_FloatingActionBtn_Tutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9B43635893D20674E5B1F0 /* Pods_FloatingActionBtn_Tutorial.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		3E6768D02719B3760001F0C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E6768D32719B3760001F0C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E6768D52719B3760001F0C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		903C3BF30299CDDE38AD8269 /* Pods-FloatingActionBtn_Tutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FloatingActionBtn_Tutorial.release.xcconfig"; path = "Target Support Files/Pods-FloatingActionBtn_Tutorial/Pods-FloatingActionBtn_Tutorial.release.xcconfig"; sourceTree = "<group>"; };
+		A3D7D5DE4E12C247E47CF298 /* Pods-FloatingActionBtn_Tutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FloatingActionBtn_Tutorial.debug.xcconfig"; path = "Target Support Files/Pods-FloatingActionBtn_Tutorial/Pods-FloatingActionBtn_Tutorial.debug.xcconfig"; sourceTree = "<group>"; };
+		AC9B43635893D20674E5B1F0 /* Pods_FloatingActionBtn_Tutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FloatingActionBtn_Tutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB62CB1D948778874BE3581D /* Pods_FloatingActionBtn_Tutorial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		274ADFEDCB9F11EDF02A9737 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A3D7D5DE4E12C247E47CF298 /* Pods-FloatingActionBtn_Tutorial.debug.xcconfig */,
+				903C3BF30299CDDE38AD8269 /* Pods-FloatingActionBtn_Tutorial.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		3E6768BB2719B3740001F0C0 = {
 			isa = PBXGroup;
 			children = (
 				3E6768C62719B3750001F0C0 /* FloatingActionBtn_Tutorial */,
 				3E6768C52719B3750001F0C0 /* Products */,
+				274ADFEDCB9F11EDF02A9737 /* Pods */,
+				F2746B1A20723C4D100A6F2B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = FloatingActionBtn_Tutorial;
 			sourceTree = "<group>";
 		};
+		F2746B1A20723C4D100A6F2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC9B43635893D20674E5B1F0 /* Pods_FloatingActionBtn_Tutorial.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E6768D82719B3760001F0C0 /* Build configuration list for PBXNativeTarget "FloatingActionBtn_Tutorial" */;
 			buildPhases = (
+				13D4A26D83065D1336DB1D38 /* [CP] Check Pods Manifest.lock */,
 				3E6768C02719B3740001F0C0 /* Sources */,
 				3E6768C12719B3740001F0C0 /* Frameworks */,
 				3E6768C22719B3740001F0C0 /* Resources */,
+				A1688F14285E6EA0E0072C34 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13D4A26D83065D1336DB1D38 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FloatingActionBtn_Tutorial-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1688F14285E6EA0E0072C34 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FloatingActionBtn_Tutorial/Pods-FloatingActionBtn_Tutorial-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FloatingActionBtn_Tutorial/Pods-FloatingActionBtn_Tutorial-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FloatingActionBtn_Tutorial/Pods-FloatingActionBtn_Tutorial-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3E6768C02719B3740001F0C0 /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		3E6768D92719B3760001F0C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3D7D5DE4E12C247E47CF298 /* Pods-FloatingActionBtn_Tutorial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +382,7 @@
 		};
 		3E6768DA2719B3760001F0C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 903C3BF30299CDDE38AD8269 /* Pods-FloatingActionBtn_Tutorial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
